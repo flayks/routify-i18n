@@ -1,8 +1,14 @@
 <script>
-    import RoutifyIntro from './example/_components/RoutifyIntro.svelte'
     import { metatags } from '@roxi/routify'
-    metatags.title = 'My Routify app'
-    metatags.description = 'Description coming soon...'
+    import { language, lang } from '../language'
+
+    metatags.title = 'Routify i18n'
 </script>
 
-<RoutifyIntro />
+<h1>Language detection</h1>
+<pre>
+    {JSON.stringify($language, null, 4)}
+</pre>
+<pre>
+    {JSON.stringify($lang, null, 4)}
+</pre>
